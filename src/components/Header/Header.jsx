@@ -14,7 +14,7 @@ const Header = () => {
             <Nav>
                 <Nav.Link href="">Profile</Nav.Link>
                 <Nav.Link href="">Search</Nav.Link>
-                <Nav.Link href="">Top Ten</Nav.Link>
+                <Nav.Link href="/topTen">Top Ten</Nav.Link>
             </Nav>
         </Navbar>
         </div>
