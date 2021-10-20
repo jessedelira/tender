@@ -3,14 +3,16 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import {Button} from 'react-bootstrap';
 import MapContainer from '../src/components/MapContainer/MapContainer.jsx';
 import {Route} from 'react-rou'
+// import MapContainer from '../src/components/MapContainer/MapContainer.jsx';
+import ChickenCarousel from './components/ChickenCarousel/ChickenCarousel.jsx';
 
 const App = () => {
   return (
     <div className="App">
       
       <Header></Header>
-      <Button>Hi</Button>
-      <MapContainer></MapContainer>
+      {/* <MapContainer></MapContainer> */}
+      <ChickenCarousel></ChickenCarousel>
     </div>
   );
 }
