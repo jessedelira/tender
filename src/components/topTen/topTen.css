@@ -1,3 +1,6 @@
-body{
-    background-color: black;
+section{
+    margin-bottom: 5%;
+    padding: 10px;
+    background-color:#212529;
+    color:#909090;
 }

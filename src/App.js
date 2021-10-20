@@ -5,6 +5,7 @@ import Layout from '../src/components/Layout/Layout.jsx';
 import ChickenCarousel from './components/ChickenCarousel/ChickenCarousel.jsx';
 import SignIn from '../src/components/SignIn/SignIn.jsx';
 import topTen from './components/topTen/topTen.jsx';
+import LeaderBoard from './LeaderBoard/LeaderBoard.jsx';
 const App = () => {
   return (
     <div className="App">
@@ -13,6 +14,7 @@ const App = () => {
         <Route exact path='/' component={ChickenCarousel}/>
         <Route path ='/SignUp' component={SignIn}/>
         <Route path ='/topTen' component={topTen}/>
+        <Route path ='/leaderBoard' component={LeaderBoard}/>
       </Layout>
     </div>
   );
