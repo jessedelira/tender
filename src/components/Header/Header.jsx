@@ -1,5 +1,5 @@
 import React from 'react';
-import { Navbar } from 'react-bootstrap';
+import { Navbar, Nav } from 'react-bootstrap';
 const Header = () => {
 
 
@@ -7,8 +7,15 @@ const Header = () => {
         <div className="App">
         <Navbar bg="dark" variant="dark" sticky="dark">
             <Navbar.Brand>
-                <img src="https://cdn-icons.flaticon.com/png/512/2936/premium/2936419.png?token=exp=1634158927~hmac=97396b172d9953dc4096f133337a7777" width="40px" height="40px" alt="chicken"></img>
+                <img src="chicken.png" width="40px" height="40px" id="chicken-logo" alt="chicken logo"/>
+                <label htmlFor="chicken">Tender</label>
             </Navbar.Brand>
+
+            <Nav>
+                <Nav.Link href="">Profile</Nav.Link>
+                <Nav.Link href="">Search</Nav.Link>
+                <Nav.Link href="">Top Ten</Nav.Link>
+            </Nav>
         </Navbar>
         </div>
     )
