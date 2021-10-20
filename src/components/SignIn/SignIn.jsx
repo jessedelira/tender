@@ -1,49 +1,44 @@
 import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
-
+import './SignIn.css'
 
 const SignIn = () =>{
 
     return(
-        <div className="form-content">
-          <form className="form">
-            <h1>
-                Get Started with us today!
-            </h1>
+<div class="container">
+    <div class="row">
+      <div class="col-sm-9 col-md-7 col-lg-5 mx-auto">
+        <div class="card border-2 shadow rounded-3 my-5">
+          <div class="card-body p-4 p-sm-5 text-center">
+          <h1 className="card-title"> Login</h1>
+            <form className="form">
+
             <div className="form-inputs">
-                <label htmlFor="username"  className="form-label">Username</label>
                 <input
                 id="username" 
                 type="text" 
-                name="username" 
-                placeholder="Enter your username"
+                 name="username" 
+                 placeholder="Username"
                 className="form-input" 
                 />
             </div>
             <div className="form-inputs">
-                <label htmlFor="email" className="form-label">Email</label>
-                <input 
-                id="email"
-                type="email" 
-                name="email" 
-                placeholder="Enter your Email"
-                className="form-input" 
-                />
-            </div>
-            <div className="form-inputs">
-                <label htmlFor="password" className="form-label">Password</label>
                 <input 
                 id="password"
                 type="password" 
                 name="password" 
-                placeholder="Enter your Password"
+                placeholder="Password"
                 className="form-input" 
-                />
+                 />
             </div>
-            <button className="form-input-btn" type="submit"> Sign Up</button>
-
-         </form>
+                 <button className="btn btn-danger"  id=""type="submit"> Sign In</button>
+            </form>
+            
+          </div>
         </div>
+      </div>
+    </div>
+  </div>
     )
 
 
