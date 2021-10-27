@@ -12,7 +12,7 @@ const Header = () => {
             </Navbar.Brand>
 
             <Nav>
-                <Nav.Link href="">Profile</Nav.Link>
+                <Nav.Link href="/SignUp">Profile</Nav.Link>
                 <Nav.Link href="">Search</Nav.Link>
                 <Nav.Link href="">Top Ten</Nav.Link>
             </Nav>
