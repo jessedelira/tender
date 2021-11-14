@@ -33,7 +33,7 @@ const SignIn = () =>{
             </div>
                  <button className="btn btn-danger"  id=""type="submit"> Sign In</button>
             </form>
-            
+            <a href="/SignUp">Don't have an account yet?</a>
           </div>
         </div>
       </div>
@@ -41,10 +41,6 @@ const SignIn = () =>{
   </div>
     )
 
-
-
-
 }
-
 
 export default SignIn;

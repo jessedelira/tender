@@ -5,6 +5,7 @@ import MapContainer from '../src/components/MapContainer/MapContainer.jsx';
 import Layout from '../src/components/Layout/Layout.jsx';
 import ChickenCarousel from './components/ChickenCarousel/ChickenCarousel.jsx';
 import SignIn from '../src/components/SignIn/SignIn.jsx';
+import SignUp from '../src/components/SignUp/SignUp.jsx';
 import topTen from './components/topTen/topTen.jsx';
 import LeaderBoard from './LeaderBoard/LeaderBoard.jsx';
 const App = () => {
@@ -14,9 +15,11 @@ const App = () => {
       
       <Layout>
         <Route exact path='/' component={ChickenCarousel}/>
-        <Route path ='/SignUp' component={SignIn}/>
+        <Route path ='/SignIn' component={SignIn}/>
+        <Route path ='/SignUp' component={SignUp}/>
         <Route path ='/topTen' component={topTen}/>
         <Route path ='/leaderBoard' component={LeaderBoard}/>
+        
       </Layout>
     </div>
   );

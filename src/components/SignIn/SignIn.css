@@ -4,21 +4,13 @@
   padding: 0.75rem 1rem;
 }
 
-#username {
+#username, #password, #email {
   text-align: center;
 }
 
-#password {
-  text-align: center;
-}
-
+input[type="email"],
+input[type="password"],
 input[type="text"] {
-  border: 1px solid black;
-  border-radius: 20px;
-  margin: 20px auto;
-}
-
-input[type="password"] {
   border: 1px solid black;
   border-radius: 20px;
   margin: 20px auto;
