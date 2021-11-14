@@ -1,5 +1,6 @@
 import React from 'react';
 import { Navbar, Nav } from 'react-bootstrap';
+import './header.css';
 const Header = () => {
 
 
@@ -7,8 +8,10 @@ const Header = () => {
         <div className="App">
         <Navbar bg="dark" variant="dark" sticky="dark">
             <Navbar.Brand>
-                <img src="chicken.png" width="40px" height="40px" id="chicken-logo" alt="chicken logo"/>
-                <label htmlFor="chicken">Tender</label>
+                <a id="tender_logo" href="/">
+                    <img src="chicken.png" width="40px" height="40px" id="chicken-logo" alt="chicken logo"/>
+                    <label htmlFor="chicken" id="tender_text">Tender</label>
+                </a>
             </Navbar.Brand>
 
             <Nav>
