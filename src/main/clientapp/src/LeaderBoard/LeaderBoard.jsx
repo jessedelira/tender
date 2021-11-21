@@ -13,7 +13,7 @@ const LeaderBoard = () => {
   //Returns HTML for each row
   const renderLeaderboard = (resturaunt, index) => {
     return(
-          <tr>
+          <tr key={resturaunt.key}>
             <td>{resturaunt.key}</td>
             <td>{resturaunt.name}</td>
             <td>N/A</td>

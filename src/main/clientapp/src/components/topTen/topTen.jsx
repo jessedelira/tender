@@ -16,7 +16,7 @@ const TopTen = () => {
     //Returns HTML for each resuraunt
     const renderTopTen = (resturaunt, index) => {
         return(
-            <section class="1" variant="dark">
+            <section key={resturaunt.key} class="1" variant="dark">
                     <h2>{index+1}: {resturaunt.name}</h2>
                     <h4>Score: {resturaunt.score}</h4>
                     <br />
