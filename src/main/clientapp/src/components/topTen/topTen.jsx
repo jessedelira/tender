@@ -3,37 +3,36 @@ import { Alert } from 'react-bootstrap';
 import './topTen.css'
 
 const TopTen = () => {
+
+    //This needs to be an array of some sort of json elements
+    //Need to be key indexed
+    //Likely do a query of the DB getting the top 10 resturaunts based on user scores.
+    const myResturaunts = [
+        {key: 1, name: "Umi", score: 4.2},
+        {key: 2, name: "Don Hall's", score: 4.1},
+        {key: 3, name: "Firehouse Subs", score: 4}
+      ];
+
+    //Returns HTML for each resuraunt
+    const renderTopTen = (resturaunt, index) => {
+        return(
+            <section key={resturaunt.key} class="1" variant="dark">
+                    <h2>{index+1}: {resturaunt.name}</h2>
+                    <h4>Score: {resturaunt.score}</h4>
+                    <br />
+                    <img alt="No Current Image" src="" width="30%" height="30%"/>
+            </section>
+        )
+    }
+
+    //Returns entire Top Ten Bracket
     return (
-        
         <div className="App">
             <h1>Top Ten</h1>
-            <section class="1" variant="dark">
-                <h2>1: Cluckin' Bell</h2>
-                <img alt="" src="https://cdn.dribbble.com/users/4954444/screenshots/14131223/media/a37c282acc2530aac7a58801b8a48dc8.png" width="30%" height="30%"/>
-            </section>
-
-            <section id="2">
-                <h2>2: KFC </h2>
-                <img alt="" src="https://i0.wp.com/udou.ph/wp-content/uploads/2019/09/kfc-rev.jpg?resize=768%2C401&ssl=1" width="30%" height="30%"/>
-            </section>
-
-            <section id="3">
-                <h2>3: Krust Krab</h2>
-                <img alt="" src="https://media.dayoftheshirt.com/images/shirts/Th4ks/redbubble_krusty-krab-pizza-redbubble_1608645942.large.png" width="30%" height="30%"/>
-            </section>
-
-            <section id="4">
-                <h2>4: Pizza Planet</h2>
-                <img alt="" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTxKRQTmvzfsKf9gdCrIJ0cp5iuFCRxiA6n-Q&usqp=CAU" width="30%" height="30%"/>
-            </section>
-
-            <section id="5">
-                <h2>5: Whataburger </h2>
-                <img alt="" src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/94/Whataburger_logo.svg/1200px-Whataburger_logo.svg.png" width="30%" height="30%"/>
-            </section>
-            
+            <div id="topTenBracket">
+                {myResturaunts.map(renderTopTen)}
+            </div>
             <a href="/LeaderBoard" id="link-dark">Leader Board</a>
-            
         </div>
     )
 }
