@@ -1,0 +1,10 @@
+#welcome_title {
+    padding: 25px;
+    text-align: center;
+    font-size: 22px;
+}
+
+#welcome_body {
+    padding: 50px;
+    font-size: 20px;
+}
