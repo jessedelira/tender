@@ -1,10 +1,18 @@
 #welcome_title {
-    padding: 25px;
+    padding: 20px;
     text-align: center;
     font-size: 22px;
 }
 
 #welcome_body {
-    padding: 50px;
+    padding: 40px;
     font-size: 20px;
+}
+
+i {
+    color: rgb(226, 64, 0);
+}
+
+a:link {
+    text-decoration: none;
 }
