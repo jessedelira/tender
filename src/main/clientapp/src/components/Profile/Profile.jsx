@@ -14,7 +14,7 @@ function Profile() {
                 <h5>Reviews</h5>
             </div>
             <div className="review-container">
-                <div className="row">
+               
                     <div className="review">
                         <div className="square-container">
                             <div className="square"></div>
@@ -37,8 +37,7 @@ function Profile() {
                                 User
                             </div>
                     </div>
-                </div>
-                <div className="row">
+               
                     <div className="review">
                         <div>
                             <div className="square"></div>
@@ -55,8 +54,6 @@ function Profile() {
                             User
                         </div>
                     </div>
-                </div>
-                <div className="row">
                     <div className="review">
                         <div>
                             <div className="square"></div>
@@ -70,7 +67,6 @@ function Profile() {
                             User
                         </div>
                     </div>
-                </div>
             </div>
         </div>
     )
