@@ -19,6 +19,7 @@ const App = () => {
         <Route path ='/topTen' component={topTen}/>
         <Route path ='/leaderBoard' component={LeaderBoard}/>
         <Route path ='/profile' component={Profile}/>
+        <Route path ='/RestProfile' component={RestProfile}/>
       </Layout>
     </div>
   );

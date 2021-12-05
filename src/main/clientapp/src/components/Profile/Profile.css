@@ -4,12 +4,13 @@
     width: 200px;
     margin: auto;
 }
-
 .topProfile{
     align-items: center;
-    display: flex;
+    display: block;
     flex-direction: column;
-    margin-top: 10px;
+    
+    width: 100%;
+    height: fit-content;
 }
 .name{
     margin: auto;
@@ -62,4 +63,15 @@
 .paragraphs{
     word-wrap: break-word;
     flex-flow: rap nowrap;
+}
+
+.col {
+    border:1px solid black;
+}
+
+#header{
+    border:1px solid black;
+    height: 25%;
+    text-align: center;
+    background-color: aqua;
 }
