@@ -1,5 +1,6 @@
 package com.tender.app.repositories;
 
+import java.util.List;
 import java.util.Optional;
 
 import com.tender.app.models.Rating;
@@ -18,7 +19,7 @@ public interface RatingRepository extends JpaRepository<Rating, Long>{
 
     // Finds an rating from the an account id
     @Query("SELECT r FROM Rating r WHERE r.accountId = ?1")
-    Optional<Rating> findByAccountId(int id);
+    List<Rating> findByAccountId(Long id);
 
     // Finds an rating from a rating id
     @Query("SELECT r FROM Rating r WHERE r.ratingId = ?1")

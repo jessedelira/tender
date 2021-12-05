@@ -1,6 +1,5 @@
 package com.tender.app.models;
 
-import java.time.LocalDate;
 import javax.persistence.Entity;
 import javax.persistence.Table;
 import javax.persistence.GeneratedValue;

@@ -104,7 +104,7 @@ public class Rating {
         return "Review{" +
                "ratingId=" + ratingId + "\n" +
                "accountId=" + accountId + "\n" +
-               "restarauntId=" + restaurantId + "\n" +
+               "restaurantId=" + restaurantId + "\n" +
                "ratingValue=" + ratingValue + "\n" +
                "review=" + review + "\n" +
                "dateCreated=" + dateCreated + "\n" +

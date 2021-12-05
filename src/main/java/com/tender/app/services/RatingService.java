@@ -28,11 +28,19 @@ public class RatingService {
         // Add where it checks the user and restaurant id both to see if it is repeated
         Optional<Rating> foundRating = ratingRepository.findByRatingId(rating.getRatingId());
         if(foundRating.isPresent()){
-            throw new IllegalStateException("That rating already exists for restaraunt and/or user");
+            throw new IllegalStateException("That rating already exists for restaurant and/or user");
         
         }
 
         ratingRepository.save(rating);
         System.out.println("Rating Created.");
+    }
+
+
+    public List<Rating> getRatingsByUser(Long id){
+        List<Rating> foundRatings = ratingRepository.findByAccountId(id);
+        return foundRatings;
+
+        
     }
 }
