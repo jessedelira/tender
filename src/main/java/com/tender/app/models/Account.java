@@ -9,28 +9,28 @@ import javax.persistence.Table;
 
 @Entity
 @Table
-public class User {
-
+public class Account {
+    // Cannot name a table "user" in postgresql
     @Id
-    @SequenceGenerator(name = "student_sequence", sequenceName = "student_sequence", allocationSize = 1)
-    @GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "student_sequence")
+    @SequenceGenerator(name = "account_sequence", sequenceName = "account_sequence", allocationSize = 1)
+    @GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "account_sequence")
     private Long Id;
     private String Username;
     private String Password;
     private String Name;
 
-    public User(Long id, String username, String password, String name) {
+    public Account(Long id, String username, String password, String name) {
         setId(id);
         setUsername(username);
         setPassword(password);
         setName(name);
     }
 
-    public User() {
+    public Account() {
 
     }
 
-    public User(String username, String password, String name) {
+    public Account(String username, String password, String name) {
         setUsername(username);
         setPassword(password);
         setName(name);
@@ -70,7 +70,7 @@ public class User {
 
     @Override
     public String toString() {
-        return "Student{" +
+        return "Account{" +
                "Id=" + Id + "\n" +
                "Username=" + Username + "\n" +
                "Password=" + Password + "\n" +
