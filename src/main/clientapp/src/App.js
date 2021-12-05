@@ -3,22 +3,25 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import {Route} from 'react-router-dom';
 import MapContainer from '../src/components/MapContainer/MapContainer.jsx';
 import Layout from '../src/components/Layout/Layout.jsx';
-import ChickenCarousel from './components/ChickenCarousel/ChickenCarousel.jsx';
+import RestProfile from '../src/components/RestProfile/RestProfile.jsx';
+import Info from './components/Info/Info.jsx';
 import SignIn from '../src/components/SignIn/SignIn.jsx';
 import SignUp from '../src/components/SignUp/SignUp.jsx';
 import topTen from './components/topTen/topTen.jsx';
-import LeaderBoard from './LeaderBoard/LeaderBoard.jsx';
+import LeaderBoard from '../src/components/LeaderBoard/LeaderBoard.jsx';
 import Profile from './components/Profile/Profile.jsx';
 import RestProfile from './components/RestProfile/RestProfile.jsx';
+import {React, UseState} from 'react';
+
 const App = () => {
   return (
     <div className="App">
       <Header></Header>
-      
       <Layout>
-        <Route exact path='/' component={ChickenCarousel}/>
-        <Route path ='/SignIn' component={SignIn}/>
+
+        <Route exact path='/' component={Info}/>
         <Route path ='/SignUp' component={SignUp}/>
+        <Route path ='/SignIn' component={SignIn}/>
         <Route path ='/topTen' component={topTen}/>
         <Route path ='/leaderBoard' component={LeaderBoard}/>
         <Route path ='/profile' component={Profile}/>
