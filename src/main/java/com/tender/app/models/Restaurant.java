@@ -15,6 +15,7 @@ public class Restaurant {
     @SequenceGenerator(name = "restaurant_sequence", sequenceName = "restaurant_sequence", allocationSize = 1)
     @GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "restaurant_sequence")
     private Long Id;
+    private String googleId;
     private String Name;
     private String Type;
     private String imagePath;
@@ -25,6 +26,14 @@ public class Restaurant {
 
     public Restaurant(){
 
+    }
+
+    public String getGoogleId(){
+        return this.googleId;
+    }
+
+    public void setGoogleId(String id){
+        this.googleId = id;
     }
 
     public String getSafteyInfo() {
@@ -91,8 +100,9 @@ public class Restaurant {
         this.Id = id;
     }
 
-    public Restaurant(Long id, String name, String type, String imagepath, String description, String phonenumber, String address, String safteyinfo){
+    public Restaurant(Long id, String googleid, String name, String type, String imagepath, String description, String phonenumber, String address, String safteyinfo){
         setId(id);
+        setGoogleId(googleid);
         setName(name);
         setType(type);
         setImagePath(imagepath);
@@ -102,7 +112,8 @@ public class Restaurant {
         setSafteyInfo(safteyinfo);
     }
 
-    public Restaurant(String name, String type, String imagepath, String description, String phonenumber, String address, String safteyinfo){
+    public Restaurant(String googleid, String name, String type, String imagepath, String description, String phonenumber, String address, String safteyinfo){
+        setGoogleId(googleid);
         setName(name);
         setType(type);
         setImagePath(imagepath);
