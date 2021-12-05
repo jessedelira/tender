@@ -12,7 +12,7 @@ export default function Info() {
                 various resturaunts in Tender's database, and by making an account and signing in
                 to leave a review of your own.</p>
                 
-                <p>To get started, go over to <a href="/SignUp"><i>Profile</i></a> to Login, or create
+                <p>To get started, go over to <a href="/SignIn"><i>Profile</i></a> to Login, or create
                 an account if you don't already have one.
                 <br /> From there you can take a look at the <a href="/topTen"><i>Top Ten</i></a> most highly rated resturaunts
                 accoring to Tender users, as well as the <a href="/LeaderBoard"><i>Leaderboard</i></a> if you want to see a breakdown
