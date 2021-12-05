@@ -8,6 +8,7 @@ import SignIn from '../src/components/SignIn/SignIn.jsx';
 import topTen from './components/topTen/topTen.jsx';
 import LeaderBoard from './LeaderBoard/LeaderBoard.jsx';
 import Profile from './components/Profile/Profile.jsx';
+import RestProfile from './components/RestProfile/RestProfile.jsx';
 const App = () => {
   return (
     <div className="App">
