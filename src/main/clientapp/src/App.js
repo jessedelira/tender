@@ -8,6 +8,7 @@ import Info from './components/Info/Info.jsx';
 import SignIn from '../src/components/SignIn/SignIn.jsx';
 import topTen from './components/topTen/topTen.jsx';
 import LeaderBoard from './LeaderBoard/LeaderBoard.jsx';
+import Profile from './components/Profile/Profile.jsx';
 const App = () => {
   return (
     <div className="App">
@@ -18,6 +19,8 @@ const App = () => {
         <Route path ='/SignUp' component={SignIn}/>
         <Route path ='/topTen' component={topTen}/>
         <Route path ='/leaderBoard' component={LeaderBoard}/>
+        <Route path ='/profile' component={Profile}/>
+        <Route path ='/RestProfile' component={RestProfile}/>
       </Layout>
     </div>
   );
