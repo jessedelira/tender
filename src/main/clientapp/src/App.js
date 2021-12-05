@@ -7,13 +7,12 @@ import RestProfile from '../src/components/RestProfile/RestProfile.jsx';
 import Info from './components/Info/Info.jsx';
 import SignIn from '../src/components/SignIn/SignIn.jsx';
 import topTen from './components/topTen/topTen.jsx';
-import LeaderBoard from './LeaderBoard/LeaderBoard.jsx';
+import LeaderBoard from '../src/components/LeaderBoard/LeaderBoard.jsx';
 import Profile from './components/Profile/Profile.jsx';
 const App = () => {
   return (
     <div className="App">
       <Header></Header>
-      
       <Layout>
         <Route exact path='/' component={Info}/>
         <Route path ='/SignUp' component={SignIn}/>

@@ -3,7 +3,6 @@ package com.tender.app.services;
 import java.util.List;
 import java.util.Optional;
 
-import org.hibernate.hql.internal.ast.tree.RestrictableStatement;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
