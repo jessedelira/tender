@@ -15,4 +15,9 @@ public interface AccountRepository extends JpaRepository<Account, Long>{
     // Finds an account from the Username
     @Query("SELECT a FROM Account a WHERE a.Username = ?1")
     Optional<Account> findByUsername(String username);
+
+
+    // Find a user by their username and password
+    @Query("SELECT a FROM Account a WHERE a.Username = ?1 AND a.Password = ?2")
+    Optional<Account> findByUsernameAndPassword(String username,String password);
 }

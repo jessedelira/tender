@@ -58,6 +58,16 @@ public class AccountController {
         return accountService.getAccountByUsername(username);
     }
 
+    @RequestMapping("/login")
+    @GetMapping
+    public HttpStatus login(@RequestParam("username") String username, @RequestParam("password") String password){
+        Optional<Account> foundAccount = accountService.getAccountByUsernameAndPassword(username,password);
+        if(foundAccount.isEmpty()){
+            throw new IllegalStateException("No user was found with that login information");
+        }
+        return HttpStatus.OK;
+    }
+
 }
 
 

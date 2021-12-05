@@ -47,4 +47,9 @@ public class AccountService {
 
         return accountFoundByUsername;
     }
+
+    // Get account by the username and password (logging in)
+    public Optional<Account> getAccountByUsernameAndPassword(String username, String password){
+       return accountRepository.findByUsernameAndPassword(username, password);
+    }
 }
