@@ -13,11 +13,16 @@ import org.springframework.stereotype.Repository;
 public interface RatingRepository extends JpaRepository<Rating, Long>{
     
     // Finds an rating from a restaurants id
-    @Query("SELECT r FROM Rating r WHERE r.restaurantId = ?1 LIMIT 1")
-    Optional<Rating> findByRestaurantId(String id);
+    @Query("SELECT r FROM Rating r WHERE r.restaurantId = ?1")
+    Optional<Rating> findByRestaurantId(int id);
 
     // Finds an rating from the an account id
-    @Query("SELECT r FROM Rating r WHERE r.accountId = ?1 LIMIT 1")
-    Optional<Rating> findByAccountId(String id);
+    @Query("SELECT r FROM Rating r WHERE r.accountId = ?1")
+    Optional<Rating> findByAccountId(int id);
+
+    // Finds an rating from a rating id
+    @Query("SELECT r FROM Rating r WHERE r.ratingId = ?1")
+    Optional<Rating> findByRatingId(Long id);
+
 }
 

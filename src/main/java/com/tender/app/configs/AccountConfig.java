@@ -11,7 +11,7 @@ import org.springframework.context.annotation.Configuration;
 @Configuration
 public class AccountConfig {
     @Bean
-    CommandLineRunner commandLineRunner(AccountRepository repository){
+    CommandLineRunner createAccountsCommandLineRunner(AccountRepository repository){
         return args ->{
             Account jesse = new Account("jessedelira10", "Food32", "Jesse De Lira");
             Account noel = new Account("noel92","Bite10","Noel Barrera");

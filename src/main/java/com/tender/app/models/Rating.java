@@ -1,34 +1,65 @@
 package com.tender.app.models;
 
-import java.util.Date;
+import java.time.LocalDate;
 import javax.persistence.Entity;
 import javax.persistence.Table;
-
-
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+import javax.persistence.SequenceGenerator;
+/**
+ * Need an Id for every table
+ */
 @Entity
 @Table
 public class Rating {
-    private Long accountId;
-    private Long restaurantId;
+    @Id
+    @SequenceGenerator(name = "rating_sequence", sequenceName = "rating_sequence", allocationSize = 1)
+    @GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "rating_sequence")
+    private Long ratingId;
+    private int accountId;
+    private int restaurantId;
     private int ratingValue;
     private String review;
-    private Date dateCreated;
+    private LocalDate dateCreated;
 
-    public Rating(Long accountid, Long restaurantid, int ratingvalue, String reviewstring, Date datecreated){
-        this.setAccountId(accountid);
-        this.setRestaurantId(restaurantid);
-        this.setRatingValue(ratingvalue);
-        this.setReview(reviewstring);
-        this.setDateCreated(datecreated);
+    public Rating () {
+
     }
 
-   
+    public Rating(Long ratingid, int accountid, int restaurantid, int ratingvalue, String reviewstring, LocalDate datecreated){
+        setRatingId(ratingid);
+        setAccountId(accountid);
+        setRestaurantId(restaurantid);
+        setRatingValue(ratingvalue);
+        setReview(reviewstring);
+        setDateCreated(datecreated);
+    }
 
-    public Date getDateCreated() {
+    public Rating(int accountid, int restaurantid, int ratingvalue, String reviewstring, LocalDate datecreated){
+        
+        setAccountId(accountid);
+        setRestaurantId(restaurantid);
+        setRatingValue(ratingvalue);
+        setReview(reviewstring);
+        setDateCreated(datecreated);
+    }
+
+    
+
+    public Long getRatingId() {
+        return ratingId;
+    }
+   
+    public void setRatingId(Long ratingId){
+        this.ratingId = ratingId;
+    }
+
+    public LocalDate getDateCreated() {
         return dateCreated;
     }
 
-    public void setDateCreated(Date dateCreated) {
+    public void setDateCreated(LocalDate dateCreated) {
         this.dateCreated = dateCreated;
     }
 
@@ -50,31 +81,28 @@ public class Rating {
         this.ratingValue = ratingValue;
     }
 
-    public Long getRestaurantId() {
+    public int getRestaurantId() {
         return restaurantId;
     }
 
-    public void setRestaurantId(Long restaurantId) {
+    public void setRestaurantId(int restaurantId) {
         this.restaurantId = restaurantId;
     }
 
-    public Long getAccountId() {
+    public int getAccountId() {
         return accountId;
     }
 
-    public void setAccountId(Long userId) {
+    public void setAccountId(int userId) {
         this.accountId = userId;
     }
 
-    public Rating(){
-
-    }
     
-
 
     @Override
     public String toString() {
         return "Review{" +
+               "ratingId=" + ratingId + "\n" +
                "accountId=" + accountId + "\n" +
                "restarauntId=" + restaurantId + "\n" +
                "ratingValue=" + ratingValue + "\n" +
