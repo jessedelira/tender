@@ -3,7 +3,6 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import {Route} from 'react-router-dom';
 import MapContainer from '../src/components/MapContainer/MapContainer.jsx';
 import Layout from '../src/components/Layout/Layout.jsx';
-import RestProfile from '../src/components/RestProfile/RestProfile.jsx';
 import Info from './components/Info/Info.jsx';
 import SignIn from '../src/components/SignIn/SignIn.jsx';
 import SignUp from '../src/components/SignUp/SignUp.jsx';
