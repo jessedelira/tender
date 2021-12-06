@@ -1,5 +1,4 @@
 import React from 'react';
-import { Alert } from 'react-bootstrap';
 import './topTen.css'
 
 const TopTen = () => {
@@ -16,11 +15,11 @@ const TopTen = () => {
     //Returns HTML for each resuraunt
     const renderTopTen = (resturaunt, index) => {
         return(
-            <section key={resturaunt.key} class="1" variant="dark">
+            <section key={resturaunt.key}  className="1" variant="dark">
                     <h2>{index+1}: {resturaunt.name}</h2>
                     <h4>Score: {resturaunt.score}</h4>
                     <br />
-                    <img alt="No Current Image" src="" width="30%" height="30%"/>
+                    <img alt="Nothing yet" src="" width="30%" height="30%"/>
             </section>
         )
     }

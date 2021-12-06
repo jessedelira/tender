@@ -1,7 +1,6 @@
 package com.tender.app.configs;
 
 import java.util.Arrays;
-
 /**
  * Allows for all of the http API endpoints to be accessed from all different origins, since
  * by default all of the API endpoints are not able to be accesssed from outside the origin
@@ -22,7 +21,8 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter{
 
     @Override
     protected void configure(HttpSecurity http) throws Exception{
-        http.cors().and().csrf().disable();
+        http.csrf().disable().authorizeRequests().anyRequest().permitAll();
+        http.cors().disable();
     }
 
     @Bean
