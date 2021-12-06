@@ -31,4 +31,8 @@ public class RestaurantService {
         restaurantRepository.save(restaurant);
         System.out.println("Restaurant Created");
     }
+
+    public List<Restaurant> getTopThree(){
+        return restaurantRepository.findTop3();
+    }
 }

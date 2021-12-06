@@ -21,19 +21,18 @@ public class Rating {
     private int restaurantId;
     private int ratingValue;
     private String review;
-    private LocalDate dateCreated;
 
     public Rating () {
 
     }
 
-    public Rating(Long ratingid, int accountid, int restaurantid, int ratingvalue, String reviewstring, LocalDate datecreated){
+    public Rating(Long ratingid, int accountid, int restaurantid, int ratingvalue, String reviewstring){
         setRatingId(ratingid);
         setAccountId(accountid);
         setRestaurantId(restaurantid);
         setRatingValue(ratingvalue);
         setReview(reviewstring);
-        setDateCreated(datecreated);
+   
     }
 
     public Rating(int accountid, int restaurantid, int ratingvalue, String reviewstring, LocalDate datecreated){
@@ -42,7 +41,7 @@ public class Rating {
         setRestaurantId(restaurantid);
         setRatingValue(ratingvalue);
         setReview(reviewstring);
-        setDateCreated(datecreated);
+   
     }
 
     
@@ -55,13 +54,7 @@ public class Rating {
         this.ratingId = ratingId;
     }
 
-    public LocalDate getDateCreated() {
-        return dateCreated;
-    }
-
-    public void setDateCreated(LocalDate dateCreated) {
-        this.dateCreated = dateCreated;
-    }
+   
 
 
 

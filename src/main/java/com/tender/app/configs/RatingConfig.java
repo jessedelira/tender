@@ -18,8 +18,8 @@ public class RatingConfig {
     CommandLineRunner createRatingsCommandLineRunner(RatingRepository repository){
         return args->{
             Rating one = new Rating(1, 2, 4, "This place was the worst place I have ever eaten", LocalDate.of(2021, Month.FEBRUARY, 16));
-            Rating two = new Rating(2, 22, 4, "This place was the worst place I have ever eaten", LocalDate.of(2021, Month.FEBRUARY, 16));
-            Rating three = new Rating(3, 23, 4, "This place was the worst place I have ever eaten", LocalDate.of(2021, Month.FEBRUARY, 16));
+            Rating two = new Rating(2, 1, 4, "This place was the worst place I have ever eaten", LocalDate.of(2021, Month.FEBRUARY, 16));
+            Rating three = new Rating(3, 3, 4, "This place was the worst place I have ever eaten", LocalDate.of(2021, Month.FEBRUARY, 16));
 
             repository.saveAll(List.of(one,two,three));
         };

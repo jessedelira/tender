@@ -23,4 +23,11 @@ public interface RestaurantRepository extends JpaRepository<Restaurant, Long>{
 
     @Query("SELECT r FROM Restaurant r WHERE r.Type = ?1")
     List<Restaurant> findByType(String type);
+    
+    /**
+     * YOU WILL NEED TO MAKE THE QUERY
+     * @return
+     */
+    @Query("SELECT r FROM Restaurant r")
+    List<Restaurant> findTop3();
 }

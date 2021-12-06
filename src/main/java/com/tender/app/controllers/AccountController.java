@@ -33,25 +33,12 @@ public class AccountController {
         return accountService.getAccounts();
     }
 
-    /**
-     * When POST a new student to the system the client will get a 200 status code,
-     * on the condition of a succesful create of a student.
-     * 
-     * @param account
-     * @return HttpStatus
-     */
     @PostMapping
     public HttpStatus registerNewAccount(@RequestBody Account account) {
         accountService.addNewAccount(account);
         return HttpStatus.OK;
     }
 
-    //     /**
-//      * Search by a email given in the params of a URL HTTP GET Request
-//      * 
-//      * @param email
-//      * @return Optional<Student>
-//      */
     @RequestMapping("/getByUsername")
     @GetMapping
     public Optional<Account> getAccountByUsername(@RequestParam("username") String username) {
