@@ -7,6 +7,7 @@ import ChickenCarousel from './components/ChickenCarousel/ChickenCarousel.jsx';
 import SignIn from '../src/components/SignIn/SignIn.jsx';
 import topTen from './components/topTen/topTen.jsx';
 import LeaderBoard from './LeaderBoard/LeaderBoard.jsx';
+import CreateReview from './components/CreateReview/CreateReview.jsx';
 const App = () => {
   return (
     <div className="App">
@@ -17,6 +18,7 @@ const App = () => {
         <Route path ='/SignUp' component={SignIn}/>
         <Route path ='/topTen' component={topTen}/>
         <Route path ='/leaderBoard' component={LeaderBoard}/>
+        <Route path='/createReview' component={CreateReview}/>
       </Layout>
     </div>
   );
