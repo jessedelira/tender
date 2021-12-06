@@ -33,9 +33,25 @@ function useGoogleAPI(config, key){
     for(var i = 0; i < responce_count; i++){
       var name = response.data.results[i].name;
       var place_id = response.data.results[i].place_id;
-      var geo_lat = response.data.results[i].geometry.location.lat;
-      var geo_lng = response.data.results[i].geometry.location.lng;
-      console.log(name+" -- "+place_id+" -- Latitude: "+geo_lat+" -- Longitude: "+geo_lng)
+      // var geo_lat = response.data.results[i].geometry.location.lat;
+      // var geo_lng = response.data.results[i].geometry.location.lng;
+      
+      var vicinity = response.data.results[i].vicinity;
+
+      var image_path;
+      if(typeof response.data.results[i].photos !== 'undefined'){
+        image_path = "https://maps.googleapis.com/maps/api/place/photo?maxwidth=1000&photo_reference="+response.data.results[i].photos[0].photo_reference+"&key="+key;
+      }else{
+        image_path = "N/A"
+      }
+      
+      console.log(name+"\n"
+      +place_id+"\n"
+      // +"Latitude: "+geo_lat+"\n"
+      // +"Longitude: "+geo_lng+"\n"
+      +"Vicinity: "+vicinity+"\n"
+      +"Image Path: "+image_path+"\n"
+      +"-----")
     }
 
     /* If response.data.next_page_token is a valid next page token,
@@ -58,7 +74,4 @@ function useGoogleAPI(config, key){
   .catch(function (error) {
     console.log(error);
   });
-
-
 }
-
