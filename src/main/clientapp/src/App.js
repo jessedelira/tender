@@ -10,7 +10,6 @@ import SignUp from '../src/components/SignUp/SignUp.jsx';
 import topTen from './components/topTen/topTen.jsx';
 import LeaderBoard from '../src/components/LeaderBoard/LeaderBoard.jsx';
 import Profile from './components/Profile/Profile.jsx';
-import RestProfile from './components/RestProfile/RestProfile.jsx';
 import {React, UseState} from 'react';
 
 const App = () => {
@@ -18,7 +17,6 @@ const App = () => {
     <div className="App">
       <Header></Header>
       <Layout>
-
         <Route exact path='/' component={Info}/>
         <Route path ='/SignUp' component={SignUp}/>
         <Route path ='/SignIn' component={SignIn}/>
