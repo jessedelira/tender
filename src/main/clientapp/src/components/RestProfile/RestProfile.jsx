@@ -1,17 +1,16 @@
 import React from 'react'
 import RestInfo from './components/RestInfo';
+import './RestProfile.css';
 const RestProfile = () => {
     return (
         <div className="container">
             <div className="row" id="row-header">
                 
-                <div className="col">
-                    <h1>Restaruant Name</h1>
-                    <h3>Food genre</h3>
-                    <h4>Stars: / amount of reviews</h4>
-                    
+                <div className="col" id='col-header'>
+                    <img src="https://cdn.localdatacdn.com/in/fort-wayne/3442316/original/z01zz03dGk.jpg" id="header-img"alt="" /> 
                 </div>
                 <RestInfo></RestInfo>
+
             </div>
         </div>
     )
