@@ -9,7 +9,7 @@ function Profile() {
                 <div className="col" id="header">
                     <div className="topProfile">
                         <div className="name">
-                            <img id="pfp" src="beach.png" alt="" />
+                            <img id="pfp" src="user_icon.png" alt="" />
                         </div>
                         <div>
                             <h1>Dan Filler</h1>

@@ -2,7 +2,9 @@ import React from 'react';
 import './topTen.css'
 
 const TopTen = () => {
+    
 
+    
     //This needs to be an array of some sort of json elements
     //Need to be key indexed
     //Likely do a query of the DB getting the top 10 resturaunts based on user scores.

@@ -3,9 +3,11 @@ package com.tender.app.configs;
 import java.util.List;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.context.annotation.Bean;
+import org.springframework.context.annotation.Configuration;
+
 import com.tender.app.models.Restaurant;
 import com.tender.app.repositories.RestaurantRepository;
-
+@Configuration
 public class RestaurantConfig {
 
     @Bean
@@ -26,6 +28,7 @@ public class RestaurantConfig {
             Restaurant twelve = new Restaurant("ChIJf9wkLkDjFYgRhSaIHKY_pUY","Casa Ristorante Italiano","Italian","https://img.cdn4dd.com/cdn-cgi/image/fit=contain,width=600,format=auto,quality=50/https://cdn.doordash.com/media/photos/5e7d2d0f-6fe3-41fc-9e6d-4510656d5b60-retina-large.jpg","Casa Ristoranti Italiano are family owned and operated Italian restaurants serving authentic Italian pastas, pizzas, salads, soups, sandwiches, lunch specials and an array of Italian specialties.","(260) 338-2795","4111 Parnell Ave, Fort Wayne","Mask Required, Dining Area Regularly Cleaned");
 
             repository.saveAll(List.of(one,two,three,four,five,six,seven,eight,nine,ten,eleven,twelve));
+
         };
     }
 }
