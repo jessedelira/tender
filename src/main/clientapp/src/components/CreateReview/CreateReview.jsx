@@ -1,7 +1,7 @@
 import React from 'react'
 import { Dropdown, DropdownButton, Form, Button } from 'react-bootstrap'
 import 'bootstrap/dist/css/bootstrap.min.css';
-import './createreview.css';
+import './CreateReview.css';
 import createReviewPOST from '../../services/createReviewPOST';
 const CreateReview = () => {
 
