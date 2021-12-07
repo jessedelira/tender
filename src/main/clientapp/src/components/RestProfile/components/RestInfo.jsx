@@ -9,10 +9,11 @@ const RestInfo = (props) => {
              
             <div className="row">
                 <div className="col-lg-12">
-                <h1>{props.address}</h1>
+                <h2>Location</h2>
+                <p>{props.address}</p>
                 </div>
                 <div className="col-lg-12">
-                    <h1>{props.name}</h1>
+                    <h2>{props.name}</h2>
                     <p>{props.description}</p>
                     
                 </div>
