@@ -205,18 +205,10 @@ const App = () => {
         </Navbar>
       </div>
       <Layout>
-<<<<<<< HEAD
-        <Route exact path='/' component={ChickenCarousel}/>
-        <Route path ='/SignUp' component={SignIn}/>
-        <Route path ='/topTen' component={topTen}/>
-        <Route path ='/leaderBoard' component={LeaderBoard}/>
-        <Route path='/createReview' component={CreateReview}/>
-=======
         <Route path='/topThree' component={topTen} />
         <Route path='/leaderBoard' component={LeaderBoard} />
         <Route path='/profile' component={Profile} />
         <Route path='/RestProfile' component={RestProfile} />
->>>>>>> b192ec36a06a2eb13dc1b178423bacb426c216b9
       </Layout>
     </div>
   );
