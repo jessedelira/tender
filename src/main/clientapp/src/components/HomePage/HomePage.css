@@ -1,5 +1,5 @@
 #headerPic{
-    background-image: url("https://bloximages.chicago2.vip.townnews.com/madison.com/content/tncms/assets/v3/editorial/9/0c/90c73167-1a68-54f8-83f8-36a45515007e/60cbe0f024f76.image.jpg?resize=1200%2C678");
+    /* background-image: url("https://bloximages.chicago2.vip.townnews.com/madison.com/content/tncms/assets/v3/editorial/9/0c/90c73167-1a68-54f8-83f8-36a45515007e/60cbe0f024f76.image.jpg?resize=1200%2C678"); */
     height: 400px;
 
     background-size: cover;
@@ -11,7 +11,7 @@
 }
 
 #Title{
-    color: white;
+    /* color: white; */
     font-size: 100px;
 }
 #col1{
@@ -43,3 +43,7 @@ a, a:hover, a:focus, a:active{
     color: inherit;
   }
   
+#welcome_body{
+    font-weight: 200;
+    
+}

@@ -198,6 +198,7 @@ const App = () => {
           </Navbar.Brand>
 
           <Nav>
+          <Nav.Link href="/Home">Home</Nav.Link>
             <Nav.Link href="/topThree">Top Three</Nav.Link>
             <Nav.Link href="/RestProfile">Random</Nav.Link>
             <Nav.Link href="/leaderBoard">Leader Board</Nav.Link>
