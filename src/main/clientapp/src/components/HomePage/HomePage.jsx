@@ -32,12 +32,11 @@ const HomePage = () => {
                         </Card>
                         <Card className='Card'>
                             <a href="">
-                                <Card.Img variant="top" src="" id='cardImg' />
+                                <Card.Img variant="top" src="https://www.corelifeeatery.com/wp-content/uploads/corelife-eatery-web-logo-black.png" id='cardImg' />
                                 <Card.Body>
-                                    <Card.Title></Card.Title>
+                                    <Card.Title>CoreLife Eatery</Card.Title>
                                     <Card.Text>
-                                        This card has supporting text below as a natural lead-in to additional
-                                        content.{' '}
+                                    A place the creates clean, healthy, and great tasting food. All hearty bowls are complete with greens, grains, and broths.
                                     </Card.Text>
                                 </Card.Body>
                             </a>
@@ -68,12 +67,11 @@ const HomePage = () => {
                         <Card className='Card'>
 
                             <a href="">
-                                <Card.Img variant="top" src="https://cdn.localdatacdn.com/in/fort-wayne/3442316/original/z01zz03dGk.jpg/100px160" id='cardImg' />
+                                <Card.Img variant="top" src="https://upload.wikimedia.org/wikipedia/en/c/cf/Mission_BBQ_%28logo%29.svg" id='cardImg' />
                                 <Card.Body>
-                                    <Card.Title>Skyline Chili</Card.Title>
+                                    <Card.Title>Mission BBQ</Card.Title>
                                     <Card.Text>
-                                        This is a wider card with supporting text below as a natural lead-in to
-                                        additional content. This content is a little bit longer.
+                                    Casual chain featuring BBQ & American sides, plus memorabilia honoring soldiers & first responders.
                                     </Card.Text>
                                 </Card.Body>
                             </a>
