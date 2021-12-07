@@ -44,4 +44,8 @@ const CreateReview = () => {
     )
 }
 
+<<<<<<< HEAD
 export default CreateReview
+=======
+export default CreateReview
+>>>>>>> c0219b47e8f2121032e00eb86751aeee2b7d3c3a
