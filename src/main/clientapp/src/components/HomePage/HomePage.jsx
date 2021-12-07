@@ -100,7 +100,7 @@ const HomePage = () => {
                                 <Card.Body>
                                     <Card.Title>Skyline Chili</Card.Title>
                                     <Card.Text>
-                                        Text
+                                    Famous for secret recipe Cincinnati-style chili & fast, friendly dine-in & drive-thru service
                                     </Card.Text>
                                 </Card.Body>
                             </a>
