@@ -21,7 +21,7 @@ public class RatingService {
 
     public List<Rating> getRatings(){
         return ratingRepository.findAll();
-    }
+        }
 
 
     public void addNewRating(Rating rating){

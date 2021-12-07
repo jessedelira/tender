@@ -3,26 +3,17 @@ import {Button} from 'react-bootstrap';
 import Review from '../../Profile/components/Review';
 
 
-const RestInfo = () => {
+const RestInfo = (props) => {
     return (
         <div>
-             <div className="row">
-                <div className="col">
-                    
-                    <Button>Write a Review</Button>
-                    <Button>Direction</Button>
-                    <Button>Share</Button>
-                    
-                </div>
-            </div>
+             
             <div className="row">
                 <div className="col-lg-12">
-                <h1>Location</h1>
-                <h3>google map goes here</h3>
+                <h1>{props.address}</h1>
                 </div>
                 <div className="col-lg-12">
-                    <h1>About the Business</h1>
-                    <p>Info about the Restaruant</p>
+                    <h1>{props.name}</h1>
+                    <p>{props.description}</p>
                     
                 </div>
             </div>
@@ -30,9 +21,7 @@ const RestInfo = () => {
                 <div className="col">
                     <h1>Latest Reviews</h1>
                     <div>
-                        <Review></Review>
-                        <Review></Review>
-                        <Review></Review>
+                        <Review review={props.review} ratingValue={props.ratingValue}></Review>
                     </div>
                 </div>
             </div>

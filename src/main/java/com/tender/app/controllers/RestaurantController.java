@@ -30,8 +30,8 @@ public class RestaurantController {
     }
 
     @GetMapping
-    public List<Restaurant> getRestaurants() {
-        return restaurantService.getRestaurants();
+    public Optional<Restaurant> getRestaurants(@RequestParam("id") Long id) {
+        return restaurantService.getRestaurant(id);
     }
 
     @PostMapping

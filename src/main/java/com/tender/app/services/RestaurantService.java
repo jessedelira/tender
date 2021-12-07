@@ -18,8 +18,8 @@ public class RestaurantService {
         this.restaurantRepository = restaurantRepository;
     }
 
-    public List<Restaurant> getRestaurants(){
-        return restaurantRepository.findAll();
+    public Optional<Restaurant> getRestaurant(Long id){
+        return restaurantRepository.findById(id);
     }
 
     public void addNewRestaurant(Restaurant restaurant){

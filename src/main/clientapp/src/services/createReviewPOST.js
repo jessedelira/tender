@@ -1,9 +1,14 @@
-const createReviewPOST = async (username,password,name) => {
 
-    const account = {
-        "username": username,
-        "password": password,
-        "name":name
+
+const createAccountPOST = async (value, review) => {
+
+
+
+    const rating = {
+        "ratingId": 12,
+        "restaurantId": 7,
+        "ratingValue": value,
+        "review": review
     };
     
     await fetch("http://127.0.0.1:8080/api/v1/account", {
@@ -11,7 +16,7 @@ const createReviewPOST = async (username,password,name) => {
         headers:{
             "Content-Type": "application/json"
         },
-        body: JSON.stringify(account)
+        body: JSON.stringify(rating)
     })
         .then(response => response.json()
             .then(
@@ -20,4 +25,4 @@ const createReviewPOST = async (username,password,name) => {
         );
 }
 
-export default createReviewPOST;
+export default createAccountPOST;

@@ -10,6 +10,7 @@ import { React, useState, useEffect } from 'react';
 import login from './services/login.js';
 import createAccountPOST from './services/createAccountPOST.js';
 import findAccountByUsername from './services/findAccountByUsername.js';
+import CreateReview from './components/CreateReview/CreateReview.jsx';
 const App = () => {
 
   const [loggedIn, setLoggedIn] = useState(false);
@@ -199,6 +200,7 @@ const App = () => {
             <Nav.Link href="/topThree">Top Three</Nav.Link>
             <Nav.Link href="/RestProfile">Random</Nav.Link>
             <Nav.Link href="/leaderBoard">Leader Board</Nav.Link>
+            <Nav.Link href="/create">Create Review</Nav.Link>
             <Nav.Link href="/profile">Profile</Nav.Link>
             <button className="btn btn-danger" onClick={logout}>Logout</button>
           </Nav>
@@ -209,6 +211,7 @@ const App = () => {
         <Route path='/leaderBoard' component={LeaderBoard} />
         <Route path='/profile' component={Profile} />
         <Route path='/RestProfile' component={RestProfile} />
+        <Route path="/create" component={CreateReview}/>
       </Layout>
     </div>
   );

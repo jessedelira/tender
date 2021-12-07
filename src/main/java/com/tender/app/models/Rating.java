@@ -100,7 +100,6 @@ public class Rating {
                "restaurantId=" + restaurantId + "\n" +
                "ratingValue=" + ratingValue + "\n" +
                "review=" + review + "\n" +
-               "dateCreated=" + dateCreated + "\n" +
                "}";
     }
 }
