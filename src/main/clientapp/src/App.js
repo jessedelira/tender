@@ -11,6 +11,7 @@ import login from './services/login.js';
 import createAccountPOST from './services/createAccountPOST.js';
 import findAccountByUsername from './services/findAccountByUsername.js';
 import CreateReview from './components/CreateReview/CreateReview.jsx';
+import HomePage from './components/HomePage/HomePage.jsx';
 const App = () => {
 
   const [loggedIn, setLoggedIn] = useState(false);
@@ -207,6 +208,7 @@ const App = () => {
         </Navbar>
       </div>
       <Layout>
+        <Route path='/Home' component={HomePage}/>
         <Route path='/topThree' component={topTen} />
         <Route path='/leaderBoard' component={LeaderBoard} />
         <Route path='/profile' component={Profile} />

@@ -1,0 +1,45 @@
+#headerPic{
+    background-image: url("https://bloximages.chicago2.vip.townnews.com/madison.com/content/tncms/assets/v3/editorial/9/0c/90c73167-1a68-54f8-83f8-36a45515007e/60cbe0f024f76.image.jpg?resize=1200%2C678");
+    height: 400px;
+
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    text-align: center;
+
+    
+}
+
+#Title{
+    color: white;
+    font-size: 100px;
+}
+#col1{
+    text-align: left;
+}
+
+#headerRow{
+    margin-bottom: 20px;
+    margin-top: 10px;
+  
+}
+
+#headerTitle{
+    align-items: center;
+    
+}
+
+.Card{
+    margin: 10px;
+}
+
+#cardImg{
+    height: 180px;
+    
+}
+
+a, a:hover, a:focus, a:active{
+    text-decoration: none !important;
+    color: inherit;
+  }
+  
